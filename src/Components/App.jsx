@@ -1,14 +1,11 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import AnalysisCard from "./AnalysisCard/AnalysisCard";
-import Button from "@mui/material/Button";
-
 
 import Form from "./Form";
 import List from "./List/List";
 
 function App() {
-  
   return (
     <div className="parent-div">
       <Grid
@@ -30,7 +27,6 @@ function App() {
             <AnalysisCard title="Expenditure Analysis" />
             <AnalysisCard title="Summary" />
           </div>
-          
         </Grid>
         {/* MID SECTION ENDS */}
 
@@ -38,7 +34,6 @@ function App() {
         <Grid item>
           <div className="last-section">
             <List />
-            
           </div>
         </Grid>
         {/* LAST SECTION ENDS*/}

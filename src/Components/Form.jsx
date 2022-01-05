@@ -4,11 +4,11 @@ import {
   InputLabel,
   MenuItem,
   FormControl,
-  Select,
+  Select
 } from "@mui/material";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
-import Button from "@material-ui/core/Button";
+import Button from "@mui/material/Button";
 import DatePicker from "@mui/lab/DatePicker";
 
 function Form() {
@@ -71,9 +71,14 @@ function Form() {
           />
         </LocalizationProvider>
 
-        <Button sx={{ margin: "15px 0 0 0" }} variant="contained" color="primary" fullWidth>
-          CREATE
-        </Button>
+        <Button
+          sx={{ margin: "15px 0 0 0" }}
+          variant="contained"
+          color="secondary"
+          fullWidth
+          children="sakjd"
+          color="secondary"
+        />
       </div>
     </div>
   );
