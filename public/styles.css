@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* LEFT PANEL --------------------------*/
+
+.left-panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f5f7ff;
+  width: 20vw;
+  padding: 20px;
+}
+
+.left-panel h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+/* LEFT PANEL ENDS --------------------*/
+
+/* MID SECTION ------------------------*/
+.mid-section {
+  height: 100vh;
+	width: 50vw;
+  /* background-color: aqua; */
+  padding: 20px;
+}
+
+/* MID SECTION ENDS -------------------*/
+
+/* LAST SECTION -----------------------*/
+.last-section {
+  min-height: 100vh;
+  width: 20vw;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+	padding: 20px;
+  /* background-color: greenyellow; */
+}
+/* LAST SECTION ENDS ------------------*/
