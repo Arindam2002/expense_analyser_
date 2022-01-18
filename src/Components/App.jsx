@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import AnalysisCard from "./AnalysisCard/AnalysisCard";
 
-import Form from "./Form";
+import Form from "./Form/Form";
 import List from "./List/List";
 
 function App() {
@@ -23,8 +23,8 @@ function App() {
         {/* MID SECTION */}
         <Grid item>
           <div className="mid-section">
-            <AnalysisCard title="Income Analysis" />
-            <AnalysisCard title="Expenditure Analysis" />
+            <AnalysisCard title="Income" />
+            <AnalysisCard title="Expense" />
             <AnalysisCard title="Summary" />
           </div>
         </Grid>
