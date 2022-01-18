@@ -7,12 +7,12 @@ import {
   Avatar,
   ListItemSecondaryAction,
   IconButton,
-  Slide
+  Slide,
 } from "@mui/material";
-import MoneyOffIcon from "@mui/icons-material/MoneyOff";
-import DeleteIcon from "@mui/icons-material/Delete";
+import MoneyOffIcon from '@mui/icons-material/MoneyOff';
+import DeleteIcon from '@mui/icons-material/Delete';
 
-// import useStyles from "./styles";
+import useStyles from "./styles";
 
 function List() {
   // const classes = useStyles();
@@ -23,21 +23,21 @@ function List() {
       type: "Income",
       category: "Salary",
       amount: "50",
-      date: "Wed Jan 05 2022"
+      date: "Wed Jan 05 2022",
     },
     {
       id: 2,
       type: "Expense",
       category: "Pets",
       amount: "50",
-      date: "Thu Jan 06 2022"
+      date: "Thu Jan 06 2022",
     },
     {
       id: 3,
       type: "Income",
       category: "Business",
       amount: "150",
-      date: "Fri Jan 07 2022"
+      date: "Fri Jan 07 2022",
     }
   ];
 
@@ -52,21 +52,32 @@ function List() {
           key={transaction.id}
         >
           <ListItem
-            secondaryAction={
-              <IconButton edge="end" aria-label="delete">
-                <DeleteIcon />
-              </IconButton>
-            }
+            // secondaryAction={
+            //   <IconButton edge="end" aria-label="delete">
+            //     <DeleteIcon />
+            //   </IconButton>
+            // }
           >
             <ListItemAvatar>
-              <Avatar>
+              <Avatar
+                // className={
+                //   transaction.type === "Income"
+                //     ? classes.avatarExpense
+                //     : classes.avatarExpense
+                // }
+              >
                 <MoneyOffIcon />
               </Avatar>
             </ListItemAvatar>
             <ListItemText
-              primary="Single-line item"
-              secondary="Secondary text"
+              primary={transaction.category}
+              secondary={`$${transaction.amount} - ${transaction.date}`}
             />
+            <ListItemSecondaryAction>
+            <IconButton edge="end" aria-label="delete">
+                <DeleteIcon />
+              </IconButton>
+            </ListItemSecondaryAction>
           </ListItem>
         </Slide>
       ))}
